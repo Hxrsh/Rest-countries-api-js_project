@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <link rel="stylesheet" href="../css/general.css" />
+    <script type="module" src="../script/controller.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="night">
+    <nav class="nav-main">
+      <div class="nav-title">Where in the world?</div>
+      <div class="nav-mode-switch">
+        <svg class="lnr lnr-moon"><use xlink:href="#lnr-moon"></use></svg
+        ><span>Dark mode</span>
+      </div>
+    </nav>
+    <section class="main-display">
+      <div class="search-content">
+        <form class="searchbox">
+          <button type="submit" class="magnifier">
+            <svg class="lnr lnr-magnifier">
+              <use xlink:href="#lnr-magnifier"></use>
+            </svg>
+          </button>
+          <input
+            class="searchbar"
+            type="text"
+            placeholder="Search for country.."
+          />
+        </form>
+        <div class="search-filter">
+          <a class="filt-head">Filter by region</a>
+          <svg class="lnr lnr-chevron-down">
+            <use xlink:href="#lnr-chevron-down"></use>
+          </svg>
+          <div class="filter-dropdown">
+            <ul>
+              <li class="reg">Africa</li>
+              <li class="reg">Americas</li>
+              <li class="reg">Asia</li>
+              <li class="reg">Europe</li>
+              <li class="reg">Oceania</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <!-- <div class="country">
+        <img class="cont-img" src="../design/desktop-preview.jpg" />
+        <div class="cont-name">Germany</div>
+        <div class="cont-info">
+          <div class="cont-population">
+            Population:&nbsp<span class="cont-pop ct-value">1777,650,500</span>
+          </div>
+          <div class="cont-region">
+            Region:&nbsp<span class="cont-region ct-value">Europe</span>
+          </div>
+          <div class="cont-capital">
+            Capital:&nbsp<span class="cont-capital ct-value">Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="country">
+        <img class="cont-img" src="../design/desktop-preview.jpg" />
+        <div class="cont-name">Germany</div>
+        <div class="cont-info">
+          <div class="cont-population">
+            Population:&nbsp<span class="cont-pop ct-value">1777,650,500</span>
+          </div>
+          <div class="cont-region">
+            Region:&nbsp<span class="cont-region ct-value">Europe</span>
+          </div>
+          <div class="cont-capital">
+            Capital:&nbsp<span class="cont-capital ct-value">Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="country">
+        <img class="cont-img" src="../design/desktop-preview.jpg" />
+        <div class="cont-name">Germany</div>
+        <div class="cont-info">
+          <div class="cont-population">
+            Population:&nbsp<span class="cont-pop ct-value">1777,650,500</span>
+          </div>
+          <div class="cont-region">
+            Region:&nbsp<span class="cont-region ct-value">Europe</span>
+          </div>
+          <div class="cont-capital">
+            Capital:&nbsp<span class="cont-capital ct-value">Berlin</span>
+          </div>
+        </div>
+      </div>
+      <div class="country">
+        <img class="cont-img" src="../design/desktop-preview.jpg" />
+        <div class="cont-name">Germany</div>
+        <div class="cont-info">
+          <div class="cont-population">
+            Population:&nbsp<span class="cont-pop ct-value">1777,650,500</span>
+          </div>
+          <div class="cont-region">
+            Region:&nbsp<span class="cont-region ct-value">Europe</span>
+          </div>
+          <div class="cont-capital">
+            Capital:&nbsp<span class="cont-capital ct-value">Berlin</span>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="detail-view">
+        <div class="country-detail">
+          <img src="../design/desktop-preview.jpg" />
+          <div class="country-info">
+            <div class="info-head">Belgium</div>
+            <div class="info-detail">
+              <div class="cont-native">
+                Native Name:&nbsp<span class="cont-native cti-value"
+                  >Berlin</span
+                >
+              </div>
+              <div class="cont-population">
+                Population:&nbsp<span class="cont-pop cti-value"
+                  >1777,650,500</span
+                >
+              </div>
+              <div class="cont-region">
+                Region:&nbsp<span class="cont-region cti-value">Europe</span>
+              </div>
+              <div class="cont-subregion">
+                Sub Region:&nbsp<span class="cont-subregion cti-value"
+                  >Berlin</span
+                >
+              </div>
+              <div class="cont-capital">
+                Capital:&nbsp<span class="cont-capital cti-value">Berlin</span>
+              </div>
+              <div class="cont-toplevel">
+                Top Level Domain:&nbsp<span class="cont-toplevel cti-value"
+                  >Berlin</span
+                >
+              </div>
+              <div class="cont-currency">
+                Currencies:&nbsp<span class="cont-currency cti-value"
+                  >Berlin</span
+                >
+              </div>
+              <div class="cont-languages">
+                Languages:&nbsp<span class="cont-domain cti-value">Berlin</span>
+              </div>
+             
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </body>
+</html>

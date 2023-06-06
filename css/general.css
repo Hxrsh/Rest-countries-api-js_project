@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Nunito sans", sans-serif;
+  min-width: 170rem;
+}
+/* Navigation styling */
+/* =============================================================================*/
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  padding: 2rem 8em;
+  background-color: hsl(0, 0%, 100%);
+}
+.nav-title {
+  font-size: 3rem;
+}
+
+.nav-mode-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.lnr-moon {
+  width: 2rem;
+  height: 2rem;
+  transition: 0.3s;
+}
+.main-display {
+  max-width: 170rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  /* background-color: black; */
+}
+
+/* Search and filter */
+/* =============================================================================*/
+.search-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.searchbox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 30rem;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+}
+.searchbar {
+  border: none;
+
+  padding: 1rem 2rem;
+}
+.searchbar:focus {
+  outline: none;
+}
+.lnr-magnifier,
+.lnr-chevron-down {
+  width: 1.5rem;
+  height: 3rem;
+}
+.magnifier {
+  border: none;
+  background-color: white;
+}
+.search-filter {
+  background-color: white;
+  padding: 0.3rem 2rem;
+  border-radius: 0.5rem;
+  /* font-weight: 700; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+  position: relative;
+  transition: 0.3s;
+}
+.filter-dropdown {
+  position: absolute;
+  background-color: white;
+  width: 15rem;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  top: 110%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+  display: none;
+  border-radius: 0.5rem;
+}
+.filter-dropdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+}
+/* .search-filter:hover .filter-dropdown {
+  display: block;
+}
+.filter-dropdown:hover {
+  display: block;
+} */
+.lnr-chevron-down {
+  transition: 0.3s;
+}
+.drop {
+  display: block;
+}
+.rotate {
+  transform: rotate(0.5turn);
+}
+/* country results */
+/* =============================================================================*/
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 170rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  gap: 5rem;
+  align-items: center;
+}
+.country {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+  height: 40rem;
+  width: 30rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 3s;
+}
+.country:hover {
+  transform: scale(1.01);
+}
+.cont-img {
+  width: 100%;
+  height: 20rem;
+}
+.cont-name {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 0 2rem;
+}
+.cont-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.ct-value {
+  font-weight: 200;
+}
+.emptyError {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+/* Detail view*/
+/* =============================================================================*/
+.country-detail {
+  display: flex;
+  gap: 10rem;
+}
+.country-img {
+  width: 60rem;
+  height: 40rem;
+}
+.info-head {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+.info-detail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-height: 20rem;
+  /* max-width: 20rem; */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cti-value {
+  font-weight: lighter;
+}
+/* Dark mode */
+/* =============================================================================*/
+.night {
+  color: white;
+  background-color: hsl(207, 26%, 17%);
+  transition: 0.3s;
+}
+
+.night .nav-main {
+  background-color: hsl(209, 23%, 22%);
+}
+.night .lnr {
+  fill: white;
+}
+.night .searchbar,
+.night .searchbox,
+.night .magnifier,
+.night .search-filter,
+.night .filter-dropdown,
+.night .nav-main {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.night .searchbar[type="text"],
+.night .searchbar::placeholder {
+  color: white;
+}
+.rotate-full {
+  transform: rotate(2turn);
+}
+/* .night .nav-mode-switch span {
+  display: none;
+}
+.night .nav-mode-switch span::after {
+  content: "hello";
+} */
+/* Responsive CSS */
+/* =============================================================================*/
+@media screen and (max-width: 1100px) {
+  .results {
+    max-width: 100rem;
+  }
+}
