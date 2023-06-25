@@ -19,6 +19,10 @@ body {
   body{
     width: 140rem;
   }
+  .country-detail {
+   
+    gap: 8rem;
+  }
 }
 @media screen and (max-width: 800px) {
   html{
@@ -29,6 +33,10 @@ body {
   }
   .results {
     width: 100rem;
+  }
+  .country-detail {
+   
+    gap: 5rem;
   }
 }
 /* Navigation styling */
