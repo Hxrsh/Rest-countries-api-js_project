@@ -101,6 +101,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
   display: none;
   border-radius: 0.5rem;
+  z-index: 10;
 }
 .filter-dropdown ul {
   list-style: none;

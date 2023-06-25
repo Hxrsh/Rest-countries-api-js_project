@@ -18,9 +18,13 @@ class homeView extends View {
     document.querySelector("body").addEventListener("click", function (e) {
       // e.preventDefault();
       if (!e.target.closest(".nav-mode-switch")) return;
-      console.log("clicked");
+
       document.querySelector("body").classList.toggle("night");
       document.querySelector(".lnr-moon").classList.toggle("rotate-full");
+
+      document.querySelector(".theme-toggler").innerHTML == "Light mode"
+        ? (document.querySelector(".theme-toggler").innerHTML = "Dark mode")
+        : (document.querySelector(".theme-toggler").innerHTML = "Light mode");
     });
   }
 }
