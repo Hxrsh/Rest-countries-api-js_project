@@ -23,6 +23,10 @@ body {
    
     gap: 8rem;
   }
+  .country-img {
+    width: 40rem;
+    height: 20rem;
+  }
 }
 @media screen and (max-width: 800px) {
   html{
